@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarketMesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom colors to match logo */
+    .bg-primary {
+      background-color: #3d3859; /* Updated background color */
+    }
+    .bg-primary-light {
+      background-color: #514c73; /* Lighter shade for contrast */
+    }
+    .text-highlight {
+      color: #f3eac3; /* Light yellow from logo */
+    }
+    .bg-highlight {
+      background-color: #f3eac3; /* Button highlight background color */
+    }
+    .header-background {
+      background: linear-gradient(rgba(93, 56, 133, 0.5), rgba(61, 56, 89, 0.5)), url('image.jpg') no-repeat center center;
+      background-size: cover; /* Fully cover the header section */
+      height: 100vh; /* Expand to fill the viewport height */
+    }
+  </style>
+</head>
+<body class="bg-primary text-highlight font-sans leading-relaxed">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-8 py-4">
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="MarketMesh company logo" class="h-12" loading="lazy">
+      <h1 class="text-2xl font-semibold">MarketMesh</h1>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-highlight">
+      ☰
+    </button>
+    <div id="navbar" class="space-x-6 text-lg hidden md:flex">
+      <a href="overview.html" class="hover:text-white" aria-label="Navigate to Project Overview">Overview</a>
+      <a href="features.html" class="hover:text-white" aria-label="Navigate to Features">Features</a>
+      <a href="contact.html" class="hover:text-white" aria-label="Navigate to Contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="text-center py-20 header-background flex items-center justify-center">
+    <div>
+      <h2 class="text-4xl font-bold">Welcome to MarketMesh</h2>
+      <p class="mt-4 text-xl">A Market Maker for Information Markets, Enhancing Arbitrage Opportunities</p>
+      <a href="overview.html" class="inline-block mt-8 px-6 py-3 bg-highlight text-black font-medium rounded transition-transform transform hover:scale-105 hover:bg-yellow-200">
+        Learn More
+      </a>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm">
+    &copy; 2024 MarketMesh. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

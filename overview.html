@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview - MarketMesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-primary {
+      background-color: #3d3859;
+    }
+    .text-highlight {
+      color: #f3eac3;
+    }
+    .bg-highlight {
+      background-color: #f3eac3;
+    }
+  </style>
+</head>
+<body class="bg-primary text-highlight font-sans leading-relaxed">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-8 py-4">
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="MarketMesh company logo" class="h-12" loading="lazy">
+      <h1 class="text-2xl font-semibold">MarketMesh</h1>
+    </div>
+    <div class="space-x-6 text-lg">
+      <a href="index.html" class="hover:text-white">Home</a>
+      <a href="features.html" class="hover:text-white">Features</a>
+      <a href="contact.html" class="hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Overview Section -->
+  <section id="overview" class="px-8 py-16 text-center">
+    <h3 class="text-3xl font-semibold">Project Overview</h3>
+    <p class="mt-6 max-w-3xl mx-auto text-lg">
+      For many people, investing feels confusing and risky—a world filled with complex jargon, endless choices, and the fear of losing hard-earned savings. Those who don’t have the time or expertise to analyze markets often find themselves stuck on the sidelines, unsure of where to start or how to make their money work for them.
+    </p>
+    <p class="mt-4 max-w-3xl mx-auto text-lg">
+      But it doesn’t have to be this way! MarketMesh addresses this issue by providing a way to make a guaranteed profit from investing with ZERO risk of losing it all. This project identifies price discrepancies between prediction markets on two different exchanges, Kalshi™ and Polymarket™. These prediction markets list events or outcomes that people can take “Yes” or “No” positions on, depending on whether they think the event will happen or not. If the buyer is correct, they earn $1.00 per contract they own; otherwise, they earn nothing.
+    </p>
+    <p class="mt-4 max-w-3xl mx-auto text-lg">
+      This is where MarketMesh comes in! Often, the same event is priced differently across platforms, creating what are called “arbitrage opportunities.” When the combined cost of taking opposite positions (choosing “Yes” on one market and “No” on the other) is less than $1.00, a guaranteed profit can be made. Manually identifying and executing these trades while accounting for fees, liquidity constraints, and position sizing would be a hassle—but with MarketMesh, there’s no need to worry!
+    </p>
+    <h4 class="mt-8 text-2xl font-semibold">Core Functionality:</h4>
+    <ul class="mt-4 max-w-3xl mx-auto text-lg list-disc list-inside">
+      <li>Analyzes pairs of markets bidding on the same outcome across different prediction market platforms</li>
+      <li>Identifies profitable arbitrage opportunities by comparing Yes/No prices</li>
+      <li>Calculates optimal position sizes considering:</li>
+      <ul class="ml-6 list-disc list-inside">
+        <li>Available liquidity on each platform</li>
+        <li>User's bankroll constraints</li>
+        <li>Minimum return requirements</li>
+      </ul>
+      <li>Validates trades to ensure they meet profit requirements (at LEAST 1% profit)</li>
+      <li>Executes trades when valid opportunities are found</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm">
+    &copy; 2024 MarketMesh. All rights reserved.
+  </footer>
+</body>
+</html>
